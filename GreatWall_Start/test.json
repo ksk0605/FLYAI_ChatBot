@@ -1,0 +1,41 @@
+{
+  "query": "자장면한그릇보내줘",
+  "prediction": {
+    "topIntent": "Order",
+    "intents": {
+      "Order": { "score": 0.95752424 },
+      "Greetings": { "score": 0.028722243 },
+      "None": { "score": 0.0089318305 }
+    },
+    "entities": {
+      "Food": [ "자장면" ],
+      "Qty": [ "한그릇" ],
+      "$instance": {
+        "Food": [
+          {
+            "type": "Food",
+            "text": "자장면",
+            "startIndex": 0,
+            "length": 3,
+            "score": 0.53104156,
+            "modelTypeId": 1,
+            "modelType": "Entity Extractor",
+            "recognitionSources": [ "model" ]
+          }
+        ],
+        "Qty": [
+          {
+            "type": "Qty",
+            "text": "한그릇",
+            "startIndex": 3,
+            "length": 3,
+            "score": 0.95387495,
+            "modelTypeId": 1,
+            "modelType": "Entity Extractor",
+            "recognitionSources": [ "model" ]
+          }
+        ]
+      }
+    }
+  }
+}
